@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f4f6;
+}
+
+header {
+    background-color: #4caf50; /* Green header background */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+.logo img {
+    width: 120px;
+    height: auto;
+    position: absolute;
+    left: 20px;
+}
+.logo {
+    display: none; /* Hide the logo by default */
+}
+
+#home .logo {
+    display: block; /* Show the logo only in the home section */
+}
+
+.cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.cart i {
+    
+        color: white;  /* Make sure the icon is white or a visible color */
+        font-size: 1.8rem;  /* Adjust the size for visibility */
+        margin-right: 10px;  /* Add space between the icon and other elements */
+    
+    
+}
+
+#cart-count {
+    background-color: #f08804;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-section {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f3f4f6;
+}
+
+.hero-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 1; /* Ensure images are behind the text */
+}
+
+.hero-img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 2; /* Ensure text is on top of the images */
+    max-width: 80%;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Add shadow for text readability */
+}
+ /*.hero-text h2 {
+    /*font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+   font-size: 1.5rem;
+    margin-bottom: 2rem;
+}*/
+
+.cta-btn {
+    background-image: url(u.jpg);
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #45a049; /* Darker green for hover effect */
+}
+
+
+
+
+
+.info-section, .menu-section, .contact-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item span {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #4caf50; /* Green color for the price */
+    font-size: 1.5rem;
+}
+.menu-item h3 {
+    font-size: 1.5rem;
+}
+
+.menu-item p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.menu-item span {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ff6347;
+    font-size: 1.5rem;
+}
+
+button.add-to-cart {
+    margin-top: 15px;
+    background-color: #4caf50; /* Green background for the button */
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+button.add-to-cart:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+

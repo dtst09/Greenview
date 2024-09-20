@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Green View Fruit Juice</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Green view.png.png" alt="Green View Fruit Juice Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="cart">
+                <a href="#cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span> <!-- Cart count stays as it is -->
+                </a>
+            </div>
+            
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        
+        <section id="home" class="hero-section">
+            <div class="hero-images">
+                <img src="photo-1514995428455-447d4443fa7f.avif" alt="Fruit Juice 1" class="hero-img">
+                <img src="photo-1528556860752-2a6a19a285a3.avif" alt="Fruit Juice 2" class="hero-img">
+                <img src="dr.avif" alt="Fruit Juice 2" class="hero-img">
+                <img src="yy.avif" alt="Fruit Juice 2" class="hero-img">
+            </div>
+            <div class="hero-text">
+               
+                <a href="#menu" class="cta-btn">Explore Our Menu</a>
+            </div>
+        </section>
+        
+    </section>
+
+    <section id="about" class="info-section">
+        <h2>About Us</h2>
+        <p>We are passionate about serving natural, healthy, and refreshing juices made with love. Our ingredients are sourced from organic farms to give you the best taste and nutrition.</p>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Our Juice Menu</h2>
+        <div class="menu-item">
+            <h3>Green Detox Juice</h3>
+            <p>Cucumber, Spinach, Kale, and Lemon</p>
+            <span>$5.99</span>
+            <button class="add-to-cart" data-price="5.99">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <h3>Berry Blast Smoothie</h3>
+            <p>Blueberries, Strawberries, Banana, and Yogurt</p>
+            <span>$6.99</span>
+            <button class="add-to-cart" data-price="6.99">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <h3>Citrus Sunshine Juice</h3>
+            <p>Orange, Pineapple, and Carrot</p>
+            <span>$4.99</span>
+            <button class="add-to-cart" data-price="4.99">Add to Cart</button>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Green View Fruit Juice. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
