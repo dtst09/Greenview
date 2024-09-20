@@ -75,6 +75,49 @@ nav {
     
     
 }
+.cart-dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 100;
+    overflow: auto; /* If you expect more items */
+    max-height: 300px; /* Limit dropdown height */
+}
+
+.cart-dropdown h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-items li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#cart-items li:last-child {
+    border-bottom: none;
+}
+
+/* Style the cart icon for visibility */
+.cart a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
 
 #cart-count {
     background-color: #f08804;
@@ -93,6 +136,8 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
+
 
 
 .hero-section {
@@ -222,6 +267,95 @@ footer {
     color: white;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+/* Auth Section */
+.auth-container {
+    max-width: 500px;
+    margin: 4rem auto;
+    background-image: url('ttt.avif');
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.auth-toggle button {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #f3f4f6;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.auth-toggle button.active {
+    background-color: #4caf50;
+    color: white;
+}
+
+.auth-toggle button:not(.active):hover {
+    background-color: #ddd;
+}
+
+.auth-form {
+    display: none;
+}
+
+.auth-form h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.auth-form label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-weight: bold;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.auth-submit {
+    width: 100%;
+    padding: 1rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-submit:hover {
+    background-color: #45a049;
+}
+
+.alt-option {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.alt-option a {
+    color: #4caf50;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.alt-option a:hover {
+    text-decoration: underline;
 }
 
 
